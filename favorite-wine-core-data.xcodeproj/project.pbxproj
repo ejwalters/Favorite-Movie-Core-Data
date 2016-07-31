@@ -13,10 +13,14 @@
 		523F525A1D45868800BC6DDB /* favorite_movie_core_data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 523F52581D45868800BC6DDB /* favorite_movie_core_data.xcdatamodeld */; };
 		523F525C1D45868800BC6DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523F525B1D45868800BC6DDB /* Assets.xcassets */; };
 		523F525F1D45868800BC6DDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523F525D1D45868800BC6DDB /* LaunchScreen.storyboard */; };
+		524B5BB81D4E71BB004345B4 /* Wine+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B5BB61D4E71BB004345B4 /* Wine+CoreDataProperties.swift */; };
+		524B5BB91D4E71BB004345B4 /* Wine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B5BB71D4E71BB004345B4 /* Wine.swift */; };
+		524B5BBB1D4E7367004345B4 /* WineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B5BBA1D4E7367004345B4 /* WineCell.swift */; };
+		524B5BBD1D4E788D004345B4 /* CreateWineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B5BBC1D4E788D004345B4 /* CreateWineVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		523F524E1D45868800BC6DDB /* favorite-movie-core-data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "favorite-movie-core-data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		523F524E1D45868800BC6DDB /* favorite-wine-core-data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "favorite-wine-core-data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		523F52511D45868800BC6DDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		523F52531D45868800BC6DDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		523F52561D45868800BC6DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		523F525B1D45868800BC6DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		523F525E1D45868800BC6DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		523F52601D45868800BC6DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		524B5BB61D4E71BB004345B4 /* Wine+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Wine+CoreDataProperties.swift"; path = "../Wine+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		524B5BB71D4E71BB004345B4 /* Wine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wine.swift; path = ../Wine.swift; sourceTree = "<group>"; };
+		524B5BBA1D4E7367004345B4 /* WineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WineCell.swift; sourceTree = "<group>"; };
+		524B5BBC1D4E788D004345B4 /* CreateWineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWineVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +48,7 @@
 		523F52451D45868800BC6DDB = {
 			isa = PBXGroup;
 			children = (
-				523F52501D45868800BC6DDB /* favorite-movie-core-data */,
+				523F52501D45868800BC6DDB /* favorite-wine-core-data */,
 				523F524F1D45868800BC6DDB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,30 +56,32 @@
 		523F524F1D45868800BC6DDB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				523F524E1D45868800BC6DDB /* favorite-movie-core-data.app */,
+				523F524E1D45868800BC6DDB /* favorite-wine-core-data.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		523F52501D45868800BC6DDB /* favorite-movie-core-data */ = {
+		523F52501D45868800BC6DDB /* favorite-wine-core-data */ = {
 			isa = PBXGroup;
 			children = (
 				523F52681D4586AD00BC6DDB /* Controller */,
 				523F52671D4586A700BC6DDB /* View */,
 				523F52661D45869600BC6DDB /* Model */,
 				523F52511D45868800BC6DDB /* AppDelegate.swift */,
-				523F52551D45868800BC6DDB /* Main.storyboard */,
 				523F525B1D45868800BC6DDB /* Assets.xcassets */,
 				523F525D1D45868800BC6DDB /* LaunchScreen.storyboard */,
 				523F52601D45868800BC6DDB /* Info.plist */,
 				523F52581D45868800BC6DDB /* favorite_movie_core_data.xcdatamodeld */,
 			);
+			name = "favorite-wine-core-data";
 			path = "favorite-movie-core-data";
 			sourceTree = "<group>";
 		};
 		523F52661D45869600BC6DDB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				524B5BB61D4E71BB004345B4 /* Wine+CoreDataProperties.swift */,
+				524B5BB71D4E71BB004345B4 /* Wine.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -79,6 +89,8 @@
 		523F52671D4586A700BC6DDB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				523F52551D45868800BC6DDB /* Main.storyboard */,
+				524B5BBA1D4E7367004345B4 /* WineCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -87,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				523F52531D45868800BC6DDB /* ViewController.swift */,
+				524B5BBC1D4E788D004345B4 /* CreateWineVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -94,9 +107,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		523F524D1D45868800BC6DDB /* favorite-movie-core-data */ = {
+		523F524D1D45868800BC6DDB /* favorite-wine-core-data */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 523F52631D45868800BC6DDB /* Build configuration list for PBXNativeTarget "favorite-movie-core-data" */;
+			buildConfigurationList = 523F52631D45868800BC6DDB /* Build configuration list for PBXNativeTarget "favorite-wine-core-data" */;
 			buildPhases = (
 				523F524A1D45868800BC6DDB /* Sources */,
 				523F524B1D45868800BC6DDB /* Frameworks */,
@@ -106,9 +119,9 @@
 			);
 			dependencies = (
 			);
-			name = "favorite-movie-core-data";
+			name = "favorite-wine-core-data";
 			productName = "favorite-movie-core-data";
-			productReference = 523F524E1D45868800BC6DDB /* favorite-movie-core-data.app */;
+			productReference = 523F524E1D45868800BC6DDB /* favorite-wine-core-data.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,7 +139,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 523F52491D45868800BC6DDB /* Build configuration list for PBXProject "favorite-movie-core-data" */;
+			buildConfigurationList = 523F52491D45868800BC6DDB /* Build configuration list for PBXProject "favorite-wine-core-data" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -139,7 +152,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				523F524D1D45868800BC6DDB /* favorite-movie-core-data */,
+				523F524D1D45868800BC6DDB /* favorite-wine-core-data */,
 			);
 		};
 /* End PBXProject section */
@@ -162,8 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524B5BBD1D4E788D004345B4 /* CreateWineVC.swift in Sources */,
 				523F52541D45868800BC6DDB /* ViewController.swift in Sources */,
+				524B5BB91D4E71BB004345B4 /* Wine.swift in Sources */,
+				524B5BBB1D4E7367004345B4 /* WineCell.swift in Sources */,
 				523F525A1D45868800BC6DDB /* favorite_movie_core_data.xcdatamodeld in Sources */,
+				524B5BB81D4E71BB004345B4 /* Wine+CoreDataProperties.swift in Sources */,
 				523F52521D45868800BC6DDB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +299,7 @@
 				INFOPLIST_FILE = "favorite-movie-core-data/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ejw.favorite-movie-core-data";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "favorite-wine-core-data";
 			};
 			name = Debug;
 		};
@@ -293,14 +310,14 @@
 				INFOPLIST_FILE = "favorite-movie-core-data/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ejw.favorite-movie-core-data";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "favorite-wine-core-data";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		523F52491D45868800BC6DDB /* Build configuration list for PBXProject "favorite-movie-core-data" */ = {
+		523F52491D45868800BC6DDB /* Build configuration list for PBXProject "favorite-wine-core-data" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				523F52611D45868800BC6DDB /* Debug */,
@@ -309,7 +326,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		523F52631D45868800BC6DDB /* Build configuration list for PBXNativeTarget "favorite-movie-core-data" */ = {
+		523F52631D45868800BC6DDB /* Build configuration list for PBXNativeTarget "favorite-wine-core-data" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				523F52641D45868800BC6DDB /* Debug */,

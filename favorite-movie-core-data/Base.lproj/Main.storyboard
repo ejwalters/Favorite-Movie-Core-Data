@@ -27,21 +27,21 @@
                                 <rect key="frame" x="20" y="87" width="560" height="493"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="133" id="4ja-eo-Q6z">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WineCell" rowHeight="133" id="4ja-eo-Q6z" customClass="WineCell" customModule="favorite_movie_core_data" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="560" height="133"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="4ja-eo-Q6z" id="mqG-7r-yiD">
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="133"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pineapplesmall" translatesAutoresizingMaskIntoConstraints="NO" id="NI0-Ea-pd4">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Abstact Label" translatesAutoresizingMaskIntoConstraints="NO" id="NI0-Ea-pd4">
                                                     <rect key="frame" x="15" y="15" width="70" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="334-dI-S08"/>
                                                         <constraint firstAttribute="height" constant="70" id="ZcW-DO-pbO"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pineapple Express" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZ0-Rc-UI8">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Abstract" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZ0-Rc-UI8">
                                                     <rect key="frame" x="98" y="15" width="454" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="PxB-AO-hJb"/>
@@ -56,10 +56,12 @@
                                                         </mask>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="http://www.imdb.com/title/tt0910936/?ref_=nv_sr_1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Yhj-WU-Gyg">
-                                                    <rect key="frame" x="98" y="78" width="454" height="41"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="http://www.wine-searcher.com/wine-122748-0001-orin-swift-abstract-red-california-usa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Yhj-WU-Gyg">
+                                                    <rect key="frame" x="98" y="63" width="454" height="62"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="height" constant="62" id="LwY-tu-vCM"/>
                                                         <constraint firstAttribute="height" constant="41" id="aSC-fw-Mgn"/>
+                                                        <constraint firstAttribute="height" constant="62" id="sq8-3T-pe4"/>
                                                         <constraint firstAttribute="height" constant="41" id="tc0-YT-bEC"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
@@ -68,13 +70,17 @@
                                                     <variation key="default">
                                                         <mask key="constraints">
                                                             <exclude reference="aSC-fw-Mgn"/>
+                                                            <exclude reference="sq8-3T-pe4"/>
+                                                            <exclude reference="tc0-YT-bEC"/>
                                                         </mask>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="It is hilarious" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ugF-ng-CBZ">
-                                                    <rect key="frame" x="98" y="49" width="454" height="36"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="It is delicious" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ugF-ng-CBZ">
+                                                    <rect key="frame" x="98" y="38" width="454" height="25"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="NND-A9-3GB"/>
                                                         <constraint firstAttribute="height" constant="21" id="RRw-8E-Dwt"/>
+                                                        <constraint firstAttribute="height" constant="36" id="ljy-0V-XRO"/>
                                                         <constraint firstAttribute="height" constant="36" id="p29-ky-xb7"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
@@ -83,17 +89,24 @@
                                                     <variation key="default">
                                                         <mask key="constraints">
                                                             <exclude reference="RRw-8E-Dwt"/>
+                                                            <exclude reference="ljy-0V-XRO"/>
+                                                            <exclude reference="p29-ky-xb7"/>
                                                         </mask>
                                                     </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Yhj-WU-Gyg" firstAttribute="leading" secondItem="NI0-Ea-pd4" secondAttribute="trailing" constant="13" id="0XW-Fi-5Sb"/>
                                                 <constraint firstItem="ugF-ng-CBZ" firstAttribute="leading" secondItem="NI0-Ea-pd4" secondAttribute="trailing" constant="13" id="2EN-as-LkE"/>
+                                                <constraint firstItem="Yhj-WU-Gyg" firstAttribute="top" secondItem="iZ0-Rc-UI8" secondAttribute="bottom" constant="27" id="4FN-tT-wm8"/>
+                                                <constraint firstItem="Yhj-WU-Gyg" firstAttribute="trailing" secondItem="mqG-7r-yiD" secondAttribute="trailingMargin" id="4jN-Io-Nwj"/>
                                                 <constraint firstItem="iZ0-Rc-UI8" firstAttribute="trailing" secondItem="mqG-7r-yiD" secondAttribute="trailingMargin" id="C7T-ml-Hge"/>
                                                 <constraint firstItem="Yhj-WU-Gyg" firstAttribute="trailing" secondItem="mqG-7r-yiD" secondAttribute="trailingMargin" id="Czq-TU-p44"/>
                                                 <constraint firstItem="Yhj-WU-Gyg" firstAttribute="top" secondItem="iZ0-Rc-UI8" secondAttribute="bottom" constant="8" id="ED3-8i-3m6"/>
                                                 <constraint firstItem="iZ0-Rc-UI8" firstAttribute="leading" secondItem="NI0-Ea-pd4" secondAttribute="trailing" constant="13" id="EUw-Yt-0qP"/>
                                                 <constraint firstItem="iZ0-Rc-UI8" firstAttribute="leading" secondItem="NI0-Ea-pd4" secondAttribute="trailing" constant="13" id="Ewd-TN-WpX"/>
+                                                <constraint firstItem="Yhj-WU-Gyg" firstAttribute="top" secondItem="iZ0-Rc-UI8" secondAttribute="bottom" constant="42" id="INN-Pj-Ma7"/>
+                                                <constraint firstItem="ugF-ng-CBZ" firstAttribute="trailing" secondItem="mqG-7r-yiD" secondAttribute="trailingMargin" id="Id6-71-Psw"/>
                                                 <constraint firstItem="NI0-Ea-pd4" firstAttribute="top" secondItem="mqG-7r-yiD" secondAttribute="topMargin" constant="7" id="Jm3-lu-YLw"/>
                                                 <constraint firstItem="iZ0-Rc-UI8" firstAttribute="top" secondItem="mqG-7r-yiD" secondAttribute="topMargin" constant="7" id="OsY-Ce-baB"/>
                                                 <constraint firstItem="ugF-ng-CBZ" firstAttribute="trailing" secondItem="mqG-7r-yiD" secondAttribute="trailingMargin" id="PeE-Zc-lTl"/>
@@ -101,23 +114,48 @@
                                                 <constraint firstItem="NI0-Ea-pd4" firstAttribute="leading" secondItem="mqG-7r-yiD" secondAttribute="leadingMargin" constant="7" id="YlA-1B-SOj"/>
                                                 <constraint firstItem="Yhj-WU-Gyg" firstAttribute="leading" secondItem="NI0-Ea-pd4" secondAttribute="trailing" constant="13" id="ZaN-sh-FQK"/>
                                                 <constraint firstItem="Yhj-WU-Gyg" firstAttribute="top" secondItem="iZ0-Rc-UI8" secondAttribute="bottom" constant="42" id="abX-VC-w33"/>
+                                                <constraint firstItem="ugF-ng-CBZ" firstAttribute="top" secondItem="iZ0-Rc-UI8" secondAttribute="bottom" constant="3" id="d4Z-Sh-zAF"/>
                                                 <constraint firstItem="ugF-ng-CBZ" firstAttribute="top" secondItem="iZ0-Rc-UI8" secondAttribute="bottom" constant="5" id="e04-SQ-x8m"/>
                                                 <constraint firstItem="Yhj-WU-Gyg" firstAttribute="trailing" secondItem="mqG-7r-yiD" secondAttribute="trailingMargin" id="ist-Nl-pwC"/>
                                                 <constraint firstItem="Yhj-WU-Gyg" firstAttribute="leading" secondItem="NI0-Ea-pd4" secondAttribute="trailing" constant="13" id="juU-ii-oDJ"/>
+                                                <constraint firstItem="ugF-ng-CBZ" firstAttribute="trailing" secondItem="mqG-7r-yiD" secondAttribute="trailingMargin" id="khz-UE-Adw"/>
                                                 <constraint firstItem="iZ0-Rc-UI8" firstAttribute="trailing" secondItem="mqG-7r-yiD" secondAttribute="trailingMargin" id="oKd-Lm-ST7"/>
+                                                <constraint firstItem="ugF-ng-CBZ" firstAttribute="top" secondItem="iZ0-Rc-UI8" secondAttribute="bottom" constant="2" id="ryJ-Vz-X1x"/>
+                                                <constraint firstItem="Yhj-WU-Gyg" firstAttribute="trailing" secondItem="mqG-7r-yiD" secondAttribute="trailingMargin" id="sf0-fX-iCR"/>
+                                                <constraint firstItem="Yhj-WU-Gyg" firstAttribute="leading" secondItem="NI0-Ea-pd4" secondAttribute="trailing" constant="13" id="t4W-DH-7ue"/>
+                                                <constraint firstItem="ugF-ng-CBZ" firstAttribute="leading" secondItem="NI0-Ea-pd4" secondAttribute="trailing" constant="13" id="ule-vq-YDj"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="NI0-Ea-pd4" secondAttribute="bottom" constant="6.5" id="zMR-kj-Jv0"/>
+                                                <constraint firstItem="ugF-ng-CBZ" firstAttribute="leading" secondItem="NI0-Ea-pd4" secondAttribute="trailing" constant="13" id="znf-5a-BSr"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="C7T-ml-Hge"/>
                                                     <exclude reference="Ewd-TN-WpX"/>
                                                     <exclude reference="WAI-7D-Pjb"/>
+                                                    <exclude reference="2EN-as-LkE"/>
+                                                    <exclude reference="Id6-71-Psw"/>
+                                                    <exclude reference="PeE-Zc-lTl"/>
+                                                    <exclude reference="d4Z-Sh-zAF"/>
+                                                    <exclude reference="e04-SQ-x8m"/>
+                                                    <exclude reference="ule-vq-YDj"/>
+                                                    <exclude reference="0XW-Fi-5Sb"/>
+                                                    <exclude reference="4jN-Io-Nwj"/>
                                                     <exclude reference="Czq-TU-p44"/>
                                                     <exclude reference="ED3-8i-3m6"/>
+                                                    <exclude reference="INN-Pj-Ma7"/>
+                                                    <exclude reference="ZaN-sh-FQK"/>
+                                                    <exclude reference="abX-VC-w33"/>
+                                                    <exclude reference="ist-Nl-pwC"/>
                                                     <exclude reference="juU-ii-oDJ"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="wineDesc" destination="ugF-ng-CBZ" id="ksJ-UQ-FSa"/>
+                                            <outlet property="wineImage" destination="NI0-Ea-pd4" id="KM2-aY-TeI"/>
+                                            <outlet property="wineTitle" destination="iZ0-Rc-UI8" id="X40-Po-lLu"/>
+                                            <outlet property="wineUrl" destination="Yhj-WU-Gyg" id="IJz-Mm-ghY"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -137,15 +175,18 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="sUN-OQ-TAo" id="Jyq-QC-fba"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="270" y="328"/>
         </scene>
-        <!--View Controller-->
+        <!--Create WineVC-->
         <scene sceneID="veC-Xn-TZg">
             <objects>
-                <viewController id="YmT-Pf-qwx" sceneMemberID="viewController">
+                <viewController id="YmT-Pf-qwx" customClass="CreateWineVC" customModule="favorite_movie_core_data" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kCH-W2-zJi"/>
                         <viewControllerLayoutGuide type="bottom" id="UYZ-Aj-3Sc"/>
@@ -154,7 +195,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Movie Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pgl-5k-7oY">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Wine Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pgl-5k-7oY">
                                 <rect key="frame" x="20" y="114" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -164,12 +205,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IMDB URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8VY-ci-GtZ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Wine-Searcher Link" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8VY-ci-GtZ">
                                 <rect key="frame" x="20" y="243" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pineapplesmall" translatesAutoresizingMaskIntoConstraints="NO" id="dTf-Ma-JNk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Abstact Label" translatesAutoresizingMaskIntoConstraints="NO" id="dTf-Ma-JNk">
                                 <rect key="frame" x="215" y="331" width="170" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="Pjf-dX-0lT"/>
@@ -181,6 +222,16 @@
                                 <state key="normal" title="Add Image">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addImage:" destination="YmT-Pf-qwx" eventType="touchUpInside" id="Nkq-HF-K4G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3g-co-Ll8">
+                                <rect key="frame" x="226" y="527" width="148" height="30"/>
+                                <state key="normal" title="Add Wine"/>
+                                <connections>
+                                    <action selector="createWine:" destination="YmT-Pf-qwx" eventType="touchUpInside" id="kLf-rq-b2g"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -192,9 +243,12 @@
                             <constraint firstItem="dTf-Ma-JNk" firstAttribute="top" secondItem="8VY-ci-GtZ" secondAttribute="bottom" constant="58" id="N2C-b3-ESp"/>
                             <constraint firstItem="AJQ-lp-mWN" firstAttribute="leading" secondItem="xQV-56-ocj" secondAttribute="leadingMargin" id="Nik-u7-0Vm"/>
                             <constraint firstItem="dTf-Ma-JNk" firstAttribute="centerX" secondItem="xQV-56-ocj" secondAttribute="centerX" id="UpO-gN-5Bi"/>
+                            <constraint firstItem="UYZ-Aj-3Sc" firstAttribute="top" secondItem="m3g-co-Ll8" secondAttribute="bottom" constant="43" id="W78-26-Gw7"/>
                             <constraint firstItem="Pgl-5k-7oY" firstAttribute="top" secondItem="kCH-W2-zJi" secondAttribute="bottom" constant="50" id="WWV-mK-rbi"/>
+                            <constraint firstItem="m3g-co-Ll8" firstAttribute="top" secondItem="c3C-Xb-Ssj" secondAttribute="bottom" constant="26" id="X3F-oJ-2Fq"/>
                             <constraint firstItem="8VY-ci-GtZ" firstAttribute="top" secondItem="AJQ-lp-mWN" secondAttribute="bottom" constant="33" id="Y4X-ub-hSm"/>
                             <constraint firstItem="c3C-Xb-Ssj" firstAttribute="height" secondItem="dTf-Ma-JNk" secondAttribute="height" id="Y6I-N4-Nwz"/>
+                            <constraint firstItem="m3g-co-Ll8" firstAttribute="centerX" secondItem="xQV-56-ocj" secondAttribute="centerX" id="a7P-YK-Bsw"/>
                             <constraint firstItem="AJQ-lp-mWN" firstAttribute="top" secondItem="Pgl-5k-7oY" secondAttribute="bottom" constant="36" id="blj-8b-7xJ"/>
                             <constraint firstItem="AJQ-lp-mWN" firstAttribute="top" secondItem="Pgl-5k-7oY" secondAttribute="bottom" constant="36" id="cbL-zf-J4S"/>
                             <constraint firstItem="c3C-Xb-Ssj" firstAttribute="centerX" secondItem="dTf-Ma-JNk" secondAttribute="centerX" id="f8a-SP-fzN"/>
@@ -204,11 +258,22 @@
                             <constraint firstItem="8VY-ci-GtZ" firstAttribute="top" secondItem="AJQ-lp-mWN" secondAttribute="bottom" constant="33" id="vFn-k1-vKR"/>
                             <constraint firstItem="8VY-ci-GtZ" firstAttribute="leading" secondItem="xQV-56-ocj" secondAttribute="leadingMargin" id="zm1-5E-4IA"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="X3F-oJ-2Fq"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="wineDesc" destination="AJQ-lp-mWN" id="lUd-tg-aD6"/>
+                        <outlet property="wineImage" destination="dTf-Ma-JNk" id="n8V-f2-mci"/>
+                        <outlet property="wineTitle" destination="Pgl-5k-7oY" id="saV-9m-W0M"/>
+                        <outlet property="wineUrl" destination="8VY-ci-GtZ" id="0UN-ZB-IKB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o22-AW-3DC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1041" y="328"/>
+            <point key="canvasLocation" x="944" y="328"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Uoh-DJ-T2f">
@@ -231,6 +296,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pineapplesmall" width="450" height="244"/>
+        <image name="Abstact Label" width="1482" height="826"/>
     </resources>
 </document>

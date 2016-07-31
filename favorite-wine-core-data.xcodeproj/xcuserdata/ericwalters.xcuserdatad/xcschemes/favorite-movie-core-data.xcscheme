@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "523F524D1D45868800BC6DDB"
-               BuildableName = "favorite-movie-core-data.app"
-               BlueprintName = "favorite-movie-core-data"
-               ReferencedContainer = "container:favorite-movie-core-data.xcodeproj">
+               BuildableName = "favorite-wine-core-data.app"
+               BlueprintName = "favorite-wine-core-data"
+               ReferencedContainer = "container:favorite-wine-core-data.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "523F524D1D45868800BC6DDB"
-            BuildableName = "favorite-movie-core-data.app"
-            BlueprintName = "favorite-movie-core-data"
-            ReferencedContainer = "container:favorite-movie-core-data.xcodeproj">
+            BuildableName = "favorite-wine-core-data.app"
+            BlueprintName = "favorite-wine-core-data"
+            ReferencedContainer = "container:favorite-wine-core-data.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "523F524D1D45868800BC6DDB"
-            BuildableName = "favorite-movie-core-data.app"
-            BlueprintName = "favorite-movie-core-data"
-            ReferencedContainer = "container:favorite-movie-core-data.xcodeproj">
+            BuildableName = "favorite-wine-core-data.app"
+            BlueprintName = "favorite-wine-core-data"
+            ReferencedContainer = "container:favorite-wine-core-data.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "523F524D1D45868800BC6DDB"
-            BuildableName = "favorite-movie-core-data.app"
-            BlueprintName = "favorite-movie-core-data"
-            ReferencedContainer = "container:favorite-movie-core-data.xcodeproj">
+            BuildableName = "favorite-wine-core-data.app"
+            BlueprintName = "favorite-wine-core-data"
+            ReferencedContainer = "container:favorite-wine-core-data.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
