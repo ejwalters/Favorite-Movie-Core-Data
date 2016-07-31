@@ -7,29 +7,28 @@
 //
 
 import UIKit
+import CoreData
+
 
 class DetailsVC: UIViewController {
+    
+    var newCell: WineCell!
+    @IBOutlet weak var wineTitle: UILabel!
+    @IBOutlet weak var wineDescription: UILabel!
+    @IBOutlet weak var wineUrl: UILabel!
+    @IBOutlet weak var wineImage: UIImageView!
+    
+ 
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        wineTitle.text = newCell.wineTitle.text
+        wineDescription.text = newCell.wineDesc.text
+        wineUrl.text = newCell.wineUrl.text
+        wineImage.image = newCell.wineImage.image
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

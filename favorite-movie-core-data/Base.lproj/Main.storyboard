@@ -156,7 +156,7 @@
                                             <outlet property="wineImage" destination="NI0-Ea-pd4" id="KM2-aY-TeI"/>
                                             <outlet property="wineTitle" destination="iZ0-Rc-UI8" id="X40-Po-lLu"/>
                                             <outlet property="wineUrl" destination="Yhj-WU-Gyg" id="IJz-Mm-ghY"/>
-                                            <segue destination="WJP-ho-HbF" kind="show" id="DFp-Id-9rx"/>
+                                            <segue destination="WJP-ho-HbF" kind="show" identifier="Details" id="DFp-Id-9rx"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -296,10 +296,10 @@
             </objects>
             <point key="canvasLocation" x="270" y="-381"/>
         </scene>
-        <!--View Controller-->
+        <!--DetailsVC-->
         <scene sceneID="ASM-Tj-2h9">
             <objects>
-                <viewController id="WJP-ho-HbF" sceneMemberID="viewController">
+                <viewController id="WJP-ho-HbF" customClass="DetailsVC" customModule="favorite_wine_core_data" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CLf-sY-755"/>
                         <viewControllerLayoutGuide type="bottom" id="plu-Sg-h6z"/>
@@ -350,6 +350,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="aOO-FP-PGb" secondAttribute="trailing" constant="-20" id="q1e-gw-qyh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="wineDescription" destination="qOR-GB-h5H" id="8pE-MD-dzq"/>
+                        <outlet property="wineImage" destination="aOO-FP-PGb" id="YIc-6Z-igv"/>
+                        <outlet property="wineTitle" destination="Yhf-qX-dSf" id="CQb-pu-hiF"/>
+                        <outlet property="wineUrl" destination="UIx-ZA-WDX" id="DXx-H2-XFQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4IN-Bw-wbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

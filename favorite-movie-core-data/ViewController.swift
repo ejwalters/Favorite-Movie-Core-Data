@@ -61,6 +61,30 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return wineList.count
     }
+    
+    
+    var currentCell: WineCell!
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let indexPath = tableView.indexPathForSelectedRow!
+        currentCell = tableView.cellForRowAtIndexPath(indexPath)! as? WineCell
+        performSegueWithIdentifier("Details", sender: currentCell)
+
+        
+        
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "Details") {
+            if let viewC = segue.destinationViewController as? DetailsVC {
+                if let newCell = sender as? WineCell {
+                    viewC.newCell = newCell
+                }
+
+            }
+        }
+    }
 
 
 
