@@ -17,18 +17,14 @@ class DetailsVC: UIViewController {
     @IBOutlet weak var wineDescription: UILabel!
     @IBOutlet weak var wineUrl: UILabel!
     @IBOutlet weak var wineImage: UIImageView!
-    
- 
-
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         wineTitle.text = newCell.wineTitle.text
         wineDescription.text = newCell.wineDesc.text
         wineUrl.text = newCell.wineUrl.text
         wineImage.image = newCell.wineImage.image
-
-        // Do any additional setup after loading the view.
     }
 
 }
