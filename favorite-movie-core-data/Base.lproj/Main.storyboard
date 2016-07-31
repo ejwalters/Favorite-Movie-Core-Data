@@ -8,13 +8,14 @@
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
         </mutableArray>
     </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="favorite_movie_core_data" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="favorite_wine_core_data" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -27,7 +28,7 @@
                                 <rect key="frame" x="20" y="87" width="560" height="493"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WineCell" rowHeight="133" id="4ja-eo-Q6z" customClass="WineCell" customModule="favorite_movie_core_data" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WineCell" rowHeight="133" id="4ja-eo-Q6z" customClass="WineCell" customModule="favorite_wine_core_data" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="560" height="133"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="4ja-eo-Q6z" id="mqG-7r-yiD">
@@ -124,7 +125,7 @@
                                                 <constraint firstItem="Yhj-WU-Gyg" firstAttribute="trailing" secondItem="mqG-7r-yiD" secondAttribute="trailingMargin" id="sf0-fX-iCR"/>
                                                 <constraint firstItem="Yhj-WU-Gyg" firstAttribute="leading" secondItem="NI0-Ea-pd4" secondAttribute="trailing" constant="13" id="t4W-DH-7ue"/>
                                                 <constraint firstItem="ugF-ng-CBZ" firstAttribute="leading" secondItem="NI0-Ea-pd4" secondAttribute="trailing" constant="13" id="ule-vq-YDj"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="NI0-Ea-pd4" secondAttribute="bottom" constant="6.5" id="zMR-kj-Jv0"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="NI0-Ea-pd4" secondAttribute="bottom" constant="6" id="zMR-kj-Jv0"/>
                                                 <constraint firstItem="ugF-ng-CBZ" firstAttribute="leading" secondItem="NI0-Ea-pd4" secondAttribute="trailing" constant="13" id="znf-5a-BSr"/>
                                             </constraints>
                                             <variation key="default">
@@ -155,6 +156,7 @@
                                             <outlet property="wineImage" destination="NI0-Ea-pd4" id="KM2-aY-TeI"/>
                                             <outlet property="wineTitle" destination="iZ0-Rc-UI8" id="X40-Po-lLu"/>
                                             <outlet property="wineUrl" destination="Yhj-WU-Gyg" id="IJz-Mm-ghY"/>
+                                            <segue destination="WJP-ho-HbF" kind="show" id="DFp-Id-9rx"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -164,7 +166,7 @@
                         <constraints>
                             <constraint firstItem="sUN-OQ-TAo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5c0-tZ-WrK"/>
                             <constraint firstItem="sUN-OQ-TAo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CA3-wV-NC0"/>
-                            <constraint firstItem="sUN-OQ-TAo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Rhl-YG-kU6"/>
+                            <constraint firstItem="sUN-OQ-TAo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-50" id="Rhl-YG-kU6"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sUN-OQ-TAo" secondAttribute="bottom" constant="20" id="iEh-Fb-HYs"/>
                         </constraints>
                     </view>
@@ -186,7 +188,7 @@
         <!--Create WineVC-->
         <scene sceneID="veC-Xn-TZg">
             <objects>
-                <viewController id="YmT-Pf-qwx" customClass="CreateWineVC" customModule="favorite_movie_core_data" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YmT-Pf-qwx" customClass="CreateWineVC" customModule="favorite_wine_core_data" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kCH-W2-zJi"/>
                         <viewControllerLayoutGuide type="bottom" id="UYZ-Aj-3Sc"/>
@@ -293,6 +295,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPn-vf-t1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="270" y="-381"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ASM-Tj-2h9">
+            <objects>
+                <viewController id="WJP-ho-HbF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CLf-sY-755"/>
+                        <viewControllerLayoutGuide type="bottom" id="plu-Sg-h6z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KPF-Cn-eZp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Abstact Label" translatesAutoresizingMaskIntoConstraints="NO" id="aOO-FP-PGb">
+                                <rect key="frame" x="0.0" y="64" width="600" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abstract" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhf-qX-dSf">
+                                <rect key="frame" x="20" y="213" width="560" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This was a great wine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOR-GB-h5H">
+                                <rect key="frame" x="20" y="280" width="560" height="59"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.wine-searcher.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="UIx-ZA-WDX">
+                                <rect key="frame" x="20" y="372" width="560" height="59"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="plu-Sg-h6z" firstAttribute="top" secondItem="qOR-GB-h5H" secondAttribute="bottom" constant="261" id="0Bm-bj-LRw"/>
+                            <constraint firstItem="UIx-ZA-WDX" firstAttribute="trailing" secondItem="KPF-Cn-eZp" secondAttribute="trailingMargin" id="0Th-MH-Aw9"/>
+                            <constraint firstItem="aOO-FP-PGb" firstAttribute="leading" secondItem="KPF-Cn-eZp" secondAttribute="leadingMargin" constant="-20" id="D96-XE-lF4"/>
+                            <constraint firstItem="qOR-GB-h5H" firstAttribute="leading" secondItem="KPF-Cn-eZp" secondAttribute="leadingMargin" id="IOn-D4-6rd"/>
+                            <constraint firstItem="Yhf-qX-dSf" firstAttribute="leading" secondItem="KPF-Cn-eZp" secondAttribute="leadingMargin" id="JnQ-oT-GpB"/>
+                            <constraint firstItem="aOO-FP-PGb" firstAttribute="top" secondItem="CLf-sY-755" secondAttribute="bottom" id="L2R-Z4-Nl0"/>
+                            <constraint firstItem="Yhf-qX-dSf" firstAttribute="top" secondItem="aOO-FP-PGb" secondAttribute="bottom" constant="21" id="MZP-G5-xl6"/>
+                            <constraint firstItem="qOR-GB-h5H" firstAttribute="trailing" secondItem="KPF-Cn-eZp" secondAttribute="trailingMargin" id="MmL-mS-5oT"/>
+                            <constraint firstItem="plu-Sg-h6z" firstAttribute="top" secondItem="aOO-FP-PGb" secondAttribute="bottom" constant="408" id="Nam-eq-FlU"/>
+                            <constraint firstItem="plu-Sg-h6z" firstAttribute="top" secondItem="Yhf-qX-dSf" secondAttribute="bottom" constant="347" id="cJR-hO-UYs"/>
+                            <constraint firstItem="UIx-ZA-WDX" firstAttribute="leading" secondItem="KPF-Cn-eZp" secondAttribute="leadingMargin" id="fN3-4J-2gu"/>
+                            <constraint firstItem="qOR-GB-h5H" firstAttribute="top" secondItem="Yhf-qX-dSf" secondAttribute="bottom" constant="27" id="h6G-zg-az3"/>
+                            <constraint firstItem="UIx-ZA-WDX" firstAttribute="top" secondItem="qOR-GB-h5H" secondAttribute="bottom" constant="33" id="jGt-WL-lTz"/>
+                            <constraint firstItem="Yhf-qX-dSf" firstAttribute="trailing" secondItem="KPF-Cn-eZp" secondAttribute="trailingMargin" id="jQR-MN-Ejc"/>
+                            <constraint firstItem="plu-Sg-h6z" firstAttribute="top" secondItem="UIx-ZA-WDX" secondAttribute="bottom" constant="169" id="nTi-4W-3n4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aOO-FP-PGb" secondAttribute="trailing" constant="-20" id="q1e-gw-qyh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4IN-Bw-wbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971" y="-381"/>
         </scene>
     </scenes>
     <resources>

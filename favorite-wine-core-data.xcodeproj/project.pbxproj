@@ -17,6 +17,7 @@
 		524B5BB91D4E71BB004345B4 /* Wine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B5BB71D4E71BB004345B4 /* Wine.swift */; };
 		524B5BBB1D4E7367004345B4 /* WineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B5BBA1D4E7367004345B4 /* WineCell.swift */; };
 		524B5BBD1D4E788D004345B4 /* CreateWineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B5BBC1D4E788D004345B4 /* CreateWineVC.swift */; };
+		524B5BBF1D4E9FBC004345B4 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B5BBE1D4E9FBC004345B4 /* DetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		524B5BB71D4E71BB004345B4 /* Wine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wine.swift; path = ../Wine.swift; sourceTree = "<group>"; };
 		524B5BBA1D4E7367004345B4 /* WineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WineCell.swift; sourceTree = "<group>"; };
 		524B5BBC1D4E788D004345B4 /* CreateWineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWineVC.swift; sourceTree = "<group>"; };
+		524B5BBE1D4E9FBC004345B4 /* DetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				523F52531D45868800BC6DDB /* ViewController.swift */,
 				524B5BBC1D4E788D004345B4 /* CreateWineVC.swift */,
+				524B5BBE1D4E9FBC004345B4 /* DetailsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				524B5BBD1D4E788D004345B4 /* CreateWineVC.swift in Sources */,
+				524B5BBF1D4E9FBC004345B4 /* DetailsVC.swift in Sources */,
 				523F52541D45868800BC6DDB /* ViewController.swift in Sources */,
 				524B5BB91D4E71BB004345B4 /* Wine.swift in Sources */,
 				524B5BBB1D4E7367004345B4 /* WineCell.swift in Sources */,
