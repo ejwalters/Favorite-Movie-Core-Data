@@ -56,8 +56,10 @@
 		523F52501D45868800BC6DDB /* favorite-movie-core-data */ = {
 			isa = PBXGroup;
 			children = (
+				523F52681D4586AD00BC6DDB /* Controller */,
+				523F52671D4586A700BC6DDB /* View */,
+				523F52661D45869600BC6DDB /* Model */,
 				523F52511D45868800BC6DDB /* AppDelegate.swift */,
-				523F52531D45868800BC6DDB /* ViewController.swift */,
 				523F52551D45868800BC6DDB /* Main.storyboard */,
 				523F525B1D45868800BC6DDB /* Assets.xcassets */,
 				523F525D1D45868800BC6DDB /* LaunchScreen.storyboard */,
@@ -65,6 +67,28 @@
 				523F52581D45868800BC6DDB /* favorite_movie_core_data.xcdatamodeld */,
 			);
 			path = "favorite-movie-core-data";
+			sourceTree = "<group>";
+		};
+		523F52661D45869600BC6DDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		523F52671D4586A700BC6DDB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		523F52681D4586AD00BC6DDB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				523F52531D45868800BC6DDB /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +316,7 @@
 				523F52651D45868800BC6DDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
