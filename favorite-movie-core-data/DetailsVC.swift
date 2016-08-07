@@ -25,6 +25,7 @@ class DetailsVC: UIViewController {
         wineDescription.text = newCell.wineDesc.text
         wineUrl.text = newCell.wineUrl.text
         wineImage.image = newCell.wineImage.image
+        wineImage.clipsToBounds = true
     }
 
 }
