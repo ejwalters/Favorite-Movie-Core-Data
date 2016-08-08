@@ -23,7 +23,6 @@ class DetailsVC: UIViewController {
         super.viewDidLoad()
         wineTitle.text = newCell.wineTitle.text
         wineDescription.text = newCell.wineDesc.text
-        wineUrl.text = newCell.wineUrl.text
         wineImage.image = newCell.wineImage.image
         wineImage.clipsToBounds = true
     }

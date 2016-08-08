@@ -48,7 +48,6 @@ class CreateWineVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
             let wine = Wine(entity: entity, insertIntoManagedObjectContext: context)
             wine.title = title
             wine.descript = wineDesc.text
-            wine.url = wineUrl.text
             wine.setWineImage(wineImage.image!)
             
             context.insertObject(wine)

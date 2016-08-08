@@ -22,6 +22,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+//        var titleView: UIImageView
+//        titleView = UIImageView(frame: CGRect(x: 0,y: 0,width: 10,height: 40))
+//        
+//        titleView.contentMode = .ScaleAspectFill
+//        titleView.image = UIImage(named: "newLogo.png")
+//        
+//        titleView.clipsToBounds = true
+        
+//        self.navigationItem.titleView = titleView
     }
     
     override func viewDidAppear(animated: Bool) {
