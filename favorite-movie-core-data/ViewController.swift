@@ -92,6 +92,27 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
         }
     }
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.Delete) {
+            let app  = UIApplication.sharedApplication().delegate as! AppDelegate
+            let context = app.managedObjectContext
+            context.deleteObject(wineList[indexPath.row])
+            wineList.removeAtIndex(indexPath.row)
+            do {
+                try context.save()
+            } catch _ {
+            }
+            
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            
+            
+        }
+    }
 
 
 
